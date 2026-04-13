@@ -1,0 +1,95 @@
+/* https://docs.asciidoctor.org/asciidoctor/latest/html-backend/default-stylesheet/ */
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
+@import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
+
+body {
+    font-family: "Open Sans", "DejaVu Sans", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, #toctitle {
+    font-family: "Open Sans", "DejaVu Sans", sans-serif !important;
+}
+
+/* TOC (Sidebar) Tweaks */
+#toc.toc2 {
+    background: #fdfdfd !important;
+    border-right: 2px solid #ddd !important;
+}
+
+#toc.toc2 ul {
+    margin-left: 0 !important;
+    padding-left: 1em !important;
+}
+
+#toc.toc2 ul li {
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    margin: 0;
+}
+
+#toc.toc2 ul li:last-child {
+    border-bottom: none;
+}
+
+#toc.toc2 a {
+    color: #333 !important;
+    text-decoration: none;
+    display: block;
+}
+
+#toc.toc2 a:hover {
+    color: #ba3925 !important;
+    background: #f0f0f0;
+}
+
+#toc.toc2 ul.sectlevel1 {
+    padding-left: 0 !important;
+}
+
+#toc.toc2 ul.sectlevel1 > li > a {
+    font-weight: bold;
+}
+
+.new{background-color: #FF0; color: #000}
+.recent{background-color: #FFA}
+.ndef{font-style: italic}
+.italic{font-style: italic}
+.op{font-family: monospace; font-weight: bold}
+.strop{font-family: monospace; font-weight: bold}
+.key{font-weight: bold}
+.proc{} /* the proc keyword in text */
+.mac{} /* the macro keyword in text */
+.type{font-family: monospace}
+.str{font-family: monospace} /* string type */
+.array{font-family: monospace} /* array type */
+.tup{font-family: monospace} /* tuple type, tuple is indeed a keyword */
+.obj{font-family: monospace} /* object type, object is indeed a keyword */
+.func{}
+.var{font-family: monospace; font-style: italic}
+.mod{font-family: monospace; font-variant: small-caps}
+.lit{font-family: monospace; font-style: italic}
+.clit{font-family: monospace; font-style: italic} /* the same as .lit, but never enclosed with backticks */
+.slit{font-family: monospace; font-style: italic}
+.const{font-family: monospace; font-style: italic}
+.code{font-family: monospace; background-color: #EEE; color: #000}
+.term{font-family: monospace; background-color: #EEE; color: #000}
+.plain{}
+.name{}
+.unit{} /* GB, nm*/
+.nim{}
+
+/*
+
+.var::before, .term::before, .code::before, .func::before, .const::before, .lit::before, .op::before, .key::before, .type::before, .mod::before, .str::before, .obj::before, .tup::before, .mac::before, .array::before {
+  content: "'";
+  font-weight: normal
+}
+
+.var::after, .term::after, .code::after, .func::after, .const::after, .lit::after, .op::after, .key::after, .type::after, .mod::after, .str::after, .obj::after, .tup::after, .mac::after, .array::after {
+  content: "'";
+  font-weight: normal
+}
+
+*/
+

@@ -1,0 +1,82 @@
+# ~/bin/asciidoctor-pdf --theme theme1.yml nimprogramming.adoc
+extends: default
+#base:
+#  font_size: 8
+#  line_height_length: 10
+#  font-color: #ff0000
+
+role:    
+  new:
+    font-color: #000
+    background-color: #FF0
+    
+  recent:
+    background-color: #FFA
+    
+  ndef:
+    font-style: italic
+    
+  italic:
+    font-style: italic
+    
+  op:
+    font-family: $codespan-font-family
+    font_style: bold
+    
+  key:
+    font_style: bold
+    
+  type:
+    font-family: $codespan-font-family
+
+  str:
+    font-family: $codespan-font-family
+
+  array:
+    font-family: $codespan-font-family
+    
+  tup:
+    font-family: $codespan-font-family
+    
+  obj:
+    font-family: $codespan-font-family
+        
+  var:
+    font-family: $codespan-font-family
+    font-style: italic
+    
+  mod:
+    #font-family: $codespan-font-family
+    text-transform: smallcaps
+    
+  lit:
+    font-family: $codespan-font-family
+    font-style: italic
+    
+  clit:
+    font-family: $codespan-font-family
+    font-style: italic
+    
+  slit:
+    font-family: $codespan-font-family
+    font-style: italic
+    
+  const:
+    font-family: $codespan-font-family
+    font-style: italic
+    
+  code:
+    font-family: $codespan-font-family
+    font-color: #000
+    background-color: #EEE
+    #border-color: #33FF33
+    #border-radius: 2
+    #border-width: 0.5
+    #border-offset: .0
+    
+  term:
+    font-family: $codespan-font-family
+    font-color: #000
+    background-color: #EEE
+    
+
